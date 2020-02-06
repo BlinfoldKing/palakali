@@ -8,6 +8,8 @@
 }
 
 nav {
+
+    border-bottom: solid 1px #c4c4c4;
     font-family: Lato;
     display: flex;
     flex-direction: row;
@@ -97,5 +99,24 @@ nav {
                 margin: auto;
             }
         }
+    }
+}
+
+
+.about {
+        margin: 100px 0;
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        div {
+            content: "";
+            height: 100px;
+            width: 100px;
+            border: solid red 1px;
+        }
+    }
+
+    p {
+        margin-top: 100px;
     }
 }
