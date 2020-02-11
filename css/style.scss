@@ -29,12 +29,16 @@ nav {
         displax: flex;
         flex-direction: row;
         a {
-            font-size: 24px;
+            font-size: 18px;
             display: div;
-            color: #bbd900;
+            color: #bfbfbf;
             margin-left: 81px;
             &:first-child {
                 margin-left: 0;
+            }
+
+            &.is-active {
+                color: #bbd900;
             }
             text-decoration: none;
             vertical-align: middle;
@@ -110,9 +114,6 @@ nav {
         justify-content: space-evenly;
         div {
             content: "";
-            height: 100px;
-            width: 100px;
-            border: solid red 1px;
         }
     }
 
