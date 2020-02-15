@@ -1,123 +1,163 @@
 ---
 ---
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Lato;
+.button-transparent {
+    margin: auto;
+    font-size: 14px;
+    padding: 5px;
+    background: white;
+    color: #BBD900;
+    border: solid 1px #BBD900;
+    border-radius: 15px;
 }
 
-nav {
-
-    border-bottom: solid 1px #c4c4c4;
-    font-family: Lato;
-    display: flex;
-    flex-direction: row;
-
-    .logo {
-        float: left;
+.header {
+    background: url('/assets/palakalihome.png') no-repeat;
+    height: 564px;
+    background-position: right;
+    ul {
+        list-style: none;
+        border-left: solid 2px #47A942;
         margin-left: 30px;
-    }
-
-    img {
-        width: 180px;
-    }
-
-    .nav-items {
-        margin: auto;
-
-        displax: flex;
-        flex-direction: row;
-        a {
-            font-size: 18px;
-            display: div;
-            color: #bfbfbf;
-            margin-left: 81px;
-            &:first-child {
-                margin-left: 0;
-            }
-
-            &.is-active {
-                color: #bbd900;
-            }
-            text-decoration: none;
-            vertical-align: middle;
+        padding-left: 30px;
+        li {
+            padding: 15px 0;
         }
+
+        transform: translateY(100px);
     }
 }
-
-.home {
-    .hero {
-        text-align: center;
-        max-height: 734px;
-        background: linear-gradient(
-                314.06deg,
-                #ff6b00 -35.58%,
-                #00b2ff -35.56%,
-                rgba(255, 255, 255, 0) 83.44%
-            ),
-            #bbd900;
-
-        .title {
-            transform: translateY(-60px);
-            padding-top: 129px;
-            color: white;
-            font-weight: normal;
-            font-family: "Josefin Sans", sans-serif;
-            font-size: 96px;
-        }
-
-        padding: 0 124px;
-
-        img {
-            transform: translateY(-90px);
-            margin: 0 auto;
-            margin-top: -40px;
-        }
-    }
-
-    .content {
-        font-size: 24px;
-        p {
-            margin: 112px 100px !important;
-            color: #969595;
-        }
-
-        .images {
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-
-            justify-content: space-between;
-            .column {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-                height: 100%;
-                img {
-                    margin: 30px 30px;
-                    display: block;
-                }
-            }
-            img {
-                margin: auto;
-            }
-        }
-    }
-}
-
 
 .about {
-        margin: 100px 0;
+    padding: 25px 110px;
+    padding-top: 0px;
+    display: flex;
+    img {
+        margin-right: 60px;
+        transform: translateY(100px);
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+}
+
+.program {
+    height: 416px;
+    background-color: #BBD900;
+    text-align: center;
+    padding: 76px;
     .content {
         display: flex;
         justify-content: space-evenly;
-        div {
-            content: "";
+        .item {
+            p {
+                width: 300px;
+            }
         }
     }
+}
 
-    p {
-        margin-top: 100px;
+.border {
+    content: "";
+    height: 85px;
+    background: url('/assets/palakaliborder.png');
+    background-size: cover;
+}
+
+.timeline {
+    text-align: center;
+    padding: 60px;
+    .line {
+        width: calc(50% + 23px);
+        transform: translateY(12px);
+        margin: auto;
+        height: 1px;
+        background: black;
+    }
+    .content {
+        display: flex;
+        justify-content: space-evenly; 
+        .item {
+            .point {
+                z-index: 99;
+                margin: auto;
+                background: #47A942;
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                &::before {
+                    content: "";
+                    height: 100px;
+                    background: black;
+                    width: 100px;
+                }
+            }
+            h3 {
+                margin-top: 60px;
+            }
+            .subtitle {
+                font-size: 14px;
+            }
+            text-align: center;
+        }
+    }
+   
+}
+
+.gallery {
+    text-align: center;
+    .title {
+        background: #BBD900;
+        padding: 15px;
+    }
+    .foto {
+        padding: 60px;
+        .images {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            .image {
+                width: 150px;
+                height: 150px;
+                background: #c4c4c4;
+            }
+
+            &.last {
+                .image {
+                    background: linear-gradient(0deg, #FFFFFF 41.25%, rgba(255, 255, 255, 0) 100%), #c4c4c4;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: #823628;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.area {
+    border: solid 6px #BBD900;
+    padding: 40px;
+    text-align: center;
+    .content {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+            text-align: start;
+            list-style: none;
+        }
+    }
+    .address {
+        border-bottom: solid 1px #BBD900;
+        width: fit-content;
+        margin: auto;
     }
 }

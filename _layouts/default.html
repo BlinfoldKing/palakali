@@ -1,43 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
-            rel="stylesheet"
-        />
-        {% seo %} <link rel="stylesheet" href="{{ "/css/style.css" |
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/css/style.css" |
         relative_url }}">
-        <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
-        <meta charset="UTF-8" />
-        <link
-            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-        />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    </head>
+    <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
 
-    <body>
-        <div id="container">
-            {% include navbar.html %}
-            <div id="body">
-                {{content}}
-                <!-- <div id="footer">
-
-            </div> -->
-                <script>
-                    if (pathname !== "/") {
-                        document.getElementById("footer").innerHTML =
-                            "<footer></footer>";
-                    }
-                </script>
+<body>
+    <div class="header">
+        <ul>
+            <li>About</li>
+            <li>Programs</li>
+            <li>Event</li>
+            <li>Gallery</li>
+            <li>Area</li>
+        </ul>
+    </div>
+    <div class="about">
+        <img src="/assets/palakaliabout.png" alt="">
+        <div class="content">
+            <p>
+                PALAKALI CREATIVE adalah sebuah ruang berkegiatan kreatif, berkesenian, khususnya yang berhubungan
+                dengan seni rupa dan desain, yang mengajak masyarakat luas bisa mengeksplorasi dan mengapresiasi seni
+                secara lebih mendalam.Budaya lokal dan konsep ramah lingkungan, menjadi pijakan dasar dalam konsep
+                mengolah kreatifitas berkesenian.
+            </p>
+            <p>
+                Kami memberi keBEBASan anak dalam hal berkreatifitas, mengembangkan IMAJINASI yang mereka miliki. Tidak
+                secara langsung mengajarkan tentang teknik-teknik, tapi mengajak dan menemani mereka dalam sebuah proses
+                menghasilkan sebuah karya rupa dan berkesenian. Karya-karya yang sudah dihasilkan, akan diapresiasikan
+                dalam bentuk pameran atau kegiatan lain yang rutin diselenggarakan.
+            </p>
+        </div>
+    </div>
+    <div class="program">
+        <h2 class="title is-4">
+            Programs
+        </h2>
+        <div class="content">
+            <div class="item">
+                <img src="/assets/edu.png" alt="">
+                <h3 class="title is-5">Edukasi</h3>
+                <p>
+                    Membuka kelas seni reguler, kunjungan seni, pelatihan/workshop, kelas magang, kelas project,
+                    pameran, diskusi seni, dll
+                </p>
+            </div>
+            <div class="item">
+                <img src="/assets/kreatif.png" alt="">
+                <h3 class="title is-5">Produk Kreatik</h3>
+                <p>Memproduksi produk kreatif memanfaatkan bahan limbah</p>
+            </div>
+            <div class="item">
+                <img src="/assets/help.png" alt="">
+                <h3 class="title is-5">Kolaboratif Komunitas</h3>
+                <p>Membuka kerjasama dengan komunitas dan para pelaku seni & desain.</p>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="border"></div>
+    <div class="timeline">
+        <h4 class="title is-5">
+            Upcoming Events
+        </h4>
+        <div class="line"></div>
+        <div class="content">
+            <div class="item">
+                <div class="point"></div>
+                <h3 class="title is-5">Upcycle</h3>
+                <p class="subtitle">
+                    Februari 2019
+                </p>
+            </div>
+            <div class="item">
+                <div class="point"></div>
+                <h3 class="title is-5">Upcycle</h3>
+                <p class="subtitle">
+                    Februari 2019
+                </p>
+            </div>
+            <div class="item">
+                <div class="point"></div>
+                <h3 class="title is-5">Upcycle</h3>
+                <p class="subtitle">
+                    Februari 2019
+                </p>
+            </div>
+        </div>
+        <button class="button-transparent">more</button>
+    </div>
+    <div class="gallery">
+        <h3 class="title is-4">Gallery</h3>
+        <p>
+            Koleksi foto kami
+        </p>
+        <div class="foto">
+            <div class="images">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+            <div class="images last">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="area">
+        <h4 class="title is-4">
+            Area
+        </h4>
+        <div class="content">
+            <img src="/assets/palakaliarea.png" alt="">
+            <ul>
+                <li>(a) Saung Keramik</li>
+                <li>(b) Saung Palakali</li>
+                <li>(c) Gudang Kayu Palakali</li>
+                <li>(d) Lumbung Dolanan</li>
+                <li>(e) Kampung Buku</li>
+                <li>(f) Omah Karya</li>
+                <li>(g) Kamar Mandi Kampung, Mushola, Parkir & Dapur</li>
+            </ul>
+        </div>
+        <div class="address">
+            Jl. Palakali No. 26 Rt.07/07, Tanah Baru, Beji Depok (50 m dari Kelurahan Tanah Baru)
+        </div>
+    </div>
+    <footer>
+        Copyright 2019 © Saung Palakali Creative
+    </footer>
+</body>
+
 </html>
