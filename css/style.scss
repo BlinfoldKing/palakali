@@ -12,6 +12,9 @@
 }
 
 .header {
+    @media (max-width: 1200px) {
+        display: none;
+    }
     background: url('/assets/palakalihome.png') no-repeat;
     height: 564px;
     background-position: right;
@@ -42,6 +45,16 @@
 
         justify-content: center;
     }
+
+    @media (max-width: 1200px) {
+        img {
+            margin: 30px auto;
+            width: 200px;
+            transform: none;
+        }
+        flex-direction: column;
+        padding: 10vw;
+    }
 }
 
 .program {
@@ -58,6 +71,14 @@
             }
         }
     }
+
+
+    @media (max-width: 1200px) {
+        height: max-content;
+        .content {
+            flex-direction: column;
+        }
+    }
 }
 
 .border {
@@ -65,6 +86,25 @@
     height: 85px;
     background: url('/assets/palakaliborder.png');
     background-size: cover;
+}
+
+.navbar-mobile {
+	@media (min-width: 1200px) {
+		display: none;
+	}
+	display: flex;
+	img {
+		height: 60px;
+	}
+	border-bottom: solid 1px #c4c4c4;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	.menu {
+		i {
+			font-size: 30px;
+		}
+	}
 }
 
 .timeline {
@@ -104,7 +144,9 @@
             text-align: center;
         }
     }
-   
+    @media (max-width: 1200px) {
+        padding: 15px;
+    }
 }
 
 .gallery {
@@ -154,10 +196,25 @@ footer {
             text-align: start;
             list-style: none;
         }
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
     }
     .address {
         border-bottom: solid 1px #BBD900;
         width: fit-content;
         margin: auto;
     }
+}
+
+.button-more {
+    border: none;
+    color: white;
+    background: #BBD900;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    width: 60px;
 }
