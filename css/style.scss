@@ -88,6 +88,10 @@
     background-size: cover;
 }
 
+a {
+    color: black !important;
+}
+
 .navbar-mobile {
 	@media (min-width: 1200px) {
 		display: none;
