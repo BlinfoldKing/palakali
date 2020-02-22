@@ -165,7 +165,13 @@ a {
             margin-bottom: 30px;
             display: flex;
             justify-content: space-evenly;
+            @media (max-width: 768px) {
+            flex-direction: column;
+            }
             .image {
+            @media (max-width: 768px) {
+                margin: 30px auto;
+            }
                 width: 150px;
                 height: 150px;
                 background: #c4c4c4;
