@@ -7,26 +7,24 @@ layout: section
     <div class="events">
         <div class="event">
             <div class="image">
-
+                {{ event.image }}
             </div>
+            {% for event in site.data.event.events %}
             <div class="content">
                 <div class="name">
-                    Liburan Kreatif
+                    {{ event.title }}
                 </div>
                 <div class="periode">
-                    23 - 25 Desember 2019
+                    {{ event.periode }}
                 </div>
                 <div class="location">
-                    Saung Palakali Creative Space, Tanah Baru, Beji, Depok
+                    {{ event.location }}
                 </div>
                 <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices dictum pellentesque arcu, posuere
-                    volutpat, vel, ac sit arcu. Porta et ac commodo at. Proin congue enim tristique scelerisque pharetra
-                    enim. Massa ullamcorper vitae elementum nulla risus varius habitant tellus venenatis. Luctus
-                    faucibus et
-                    ultrices pellentesque eget scelerisque pellentesque. Leo arcu duis elit velit, ac.
+                    {{ event.description }}
                 </div>
             </div>
+            {% endfor %}
         </div>
     </div>
 </div>
