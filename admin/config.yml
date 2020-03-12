@@ -19,16 +19,19 @@ collections: # A list of collections the CMS should be able to edit
       fields:
         - label: "Area"
           name: "area"
+          widget: list
           fields:
             - {label: "Title", name: title, widget: string}
             - {label: "Image", name: image, widget: image}
         - label: "Studio Perupa"
           name: "studio"
+          widget: list
           fields:
             - {label: "Title", name: title, widget: string}
             - {label: "Image", name: image, widget: image}
         - label: "Kelas Gambar"
           name: "kelas"
+          widget: list
           fields:
             - {label: "Title", name: title, widget: string}
             - {label: "Image", name: image, widget: image}
@@ -36,7 +39,11 @@ collections: # A list of collections the CMS should be able to edit
       name: "event"
       file: "_data/event.yml"
       fields:
-          - {label: "Title", name: title, widget: string}
-          - {label: "Periode", name: periode, widget: string}
-          - {label: "Location", name: location, widget: string}
-          - {label: "Description", name: description, widget: markdown}
+          - label: "Event List"
+            name: events
+            widget: list
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Periode", name: periode, widget: string}
+              - {label: "Location", name: location, widget: string}
+              - {label: "Description", name: description, widget: markdown}
