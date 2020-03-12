@@ -28,7 +28,7 @@
     @media (max-width: 1200px) {
         display: none;
     }
-    background: url('/assets/palakalihome.png') no-repeat;
+    background: url('/assets/palakaliheader.png') no-repeat;
     height: 564px;
     background-position: right;
     ul {
@@ -72,7 +72,7 @@
 
 .program {
     height: 416px;
-    background-color: #BBD900;
+    background-color: #C4DE9C;
     text-align: center;
     padding: 76px;
     .content {
@@ -247,7 +247,7 @@ a {
         width: fit-content;
         margin: auto;
         margin-top: 60px;
-        background: #BBD900;
+        background: #9CDEDE;
     }
 
     p {
@@ -255,15 +255,15 @@ a {
     }
 
     .link-button {
-        border-color: #BBD900;
-        color: #BBD900 !important;
+        border-color: #9CDEDE;
+        color: #9CDEDE !important;
         width: fit-content;
         margin: 60px auto;
     }
 }
 
 footer {
-    background: #823628;
+    background: #595742;
     color: white;
     text-align: center;
     padding: 10px;
@@ -271,7 +271,7 @@ footer {
 
 .area {
     margin-bottom: 60px;
-    border: solid 6px #BBD900;
+    border: solid 6px #DEC09C;
     text-align: center;
     justify-content: space-between;
     display: flex;
@@ -291,7 +291,7 @@ footer {
         justify-content: space-between;
         flex-direction: column;
         width: fit-content;
-        background: #BBD900;
+        background: #DEC09C;
         img {
             transform: translateY(150px);
             min-width: 100% !important;
@@ -393,7 +393,7 @@ footer {
         color: white;
         margin: auto;
         width: 100vw;
-        background: #823628;
+        background: #595742;
         padding: 3px 0;
     }
 
