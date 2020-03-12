@@ -9,17 +9,11 @@ layout: section
             <img src="/assets/Area.png" alt="">
         </div>
         <div class="images">
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
+            {% for image in site.data.gallery.area %}
+            <div class="image">
+                <img src="{{image.image}}" alt="">
+            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="image-section">
@@ -27,9 +21,11 @@ layout: section
             <img src="/assets/Studio.png" alt="">
         </div>
         <div class="images">
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
+            {% for image in site.data.gallery.studio %}
+            <div class="image">
+                <img src="{{image.image}}" alt="">
+            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="image-section">
@@ -37,9 +33,11 @@ layout: section
             <img src="/assets/Kelas.png" alt="">
         </div>
         <div class="images">
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
+            {% for image in site.data.gallery.kelas %}
+            <div class="image">
+                <img src="{{image.image}}" alt="">
+            </div>
+            {% endfor %}
         </div>
     </div>
 
