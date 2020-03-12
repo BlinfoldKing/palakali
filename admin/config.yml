@@ -6,37 +6,37 @@ media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
  - label: "Content"
-    name: "content"
-    files:
-      - label: "Home Page"
-        name: "home"
-        file: "_data/home.yml"
-        fields:
-          - {label: "Title", name: title, widget: string}
-      - label: "Gallery"
-        name: "gallery"
-        file: "_data/gallery.yml"
-        fields:
-          - label: "Area"
-            name: "area"
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Image", name: image, widget: image}
-          - label: "Studio Perupa"
-            name: "studio"
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Image", name: image, widget: image}
-          - label: "Kelas Gambar"
-            name: "kelas"
-            fields:
-              - {label: "Title", name: title, widget: string}
-              - {label: "Image", name: image, widget: image}
-      - label: "Event"
-        name: "event"
-        file: "_data/event.yml"
-        fields:
+  name: "content"
+  files:
+    - label: "Home Page"
+      name: "home"
+      file: "_data/home.yml"
+      fields:
+        - {label: "Title", name: title, widget: string}
+    - label: "Gallery"
+      name: "gallery"
+      file: "_data/gallery.yml"
+      fields:
+        - label: "Area"
+          name: "area"
+          fields:
             - {label: "Title", name: title, widget: string}
-            - {label: "Periode", name: periode, widget: string}
-            - {label: "Location", name: location, widget: string}
-            - {label: "Description", name: description, widget: markdown}
+            - {label: "Image", name: image, widget: image}
+        - label: "Studio Perupa"
+          name: "studio"
+          fields:
+            - {label: "Title", name: title, widget: string}
+            - {label: "Image", name: image, widget: image}
+        - label: "Kelas Gambar"
+          name: "kelas"
+          fields:
+            - {label: "Title", name: title, widget: string}
+            - {label: "Image", name: image, widget: image}
+    - label: "Event"
+      name: "event"
+      file: "_data/event.yml"
+      fields:
+          - {label: "Title", name: title, widget: string}
+          - {label: "Periode", name: periode, widget: string}
+          - {label: "Location", name: location, widget: string}
+          - {label: "Description", name: description, widget: markdown}
