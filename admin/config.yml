@@ -48,3 +48,19 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Periode", name: periode, widget: string}
               - {label: "Location", name: location, widget: string}
               - {label: "Description", name: description, widget: markdown}
+    - label: "Profile"
+      name: "profile"
+      file: "_data/profile.yml"
+      fields:
+          - {label: "Quote", name: quote, widget: markdown}
+          - {label: "Description", name: description, widget: markdown}
+          - {label: "Visi", name: visi, widget: markdown}
+          - {label: "Misi", name: visi, widget: markdown}
+          - label: "Founder List"
+            name: founders
+            widget: list
+            fields:
+              - {label: "Name", name: name, widget: string}
+              - {label: "Image", name: image, widget: image}
+              - {label: "Role", name: role, widget: string}
+              - {label: "Description", name: description, widget: markdown}

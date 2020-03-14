@@ -8,14 +8,18 @@ layout: section
         {% for event in site.data.event.events %}
         <div class="event">
             <div class="image">
-                {{ event.image }}
+                <img src="{{event.image}}" alt="">
             </div>
             <div class="content">
                 <div class="name">
-                    {{ event.title }}
+                    <strong>
+                        {{ event.title }}
+                    </strong>
                 </div>
                 <div class="periode">
-                    {{ event.periode }}
+                    <strong>
+                        {{ event.periode }}
+                    </strong>
                 </div>
                 <div class="location">
                     {{ event.location }}

@@ -11,6 +11,18 @@
     border-radius: 15px;
 }
 
+#image-modal {
+    .modal-content {
+        text-align: center;
+    }
+    img {
+        margin: auto;
+        width: 90vw;
+        text-align: center;
+        object-fit: contain;
+    }
+}
+
 .link-button {
     background: none;
     border-radius: 15px;
@@ -533,6 +545,7 @@ footer {
             }
         }
         .event {
+            margin: 30px 0;
             align-items: center; 
             display: flex;
             flex-wrap: wrap;
@@ -559,7 +572,7 @@ footer {
                 max-width: 50vw;
                 min-height: fit-content;
                 div {
-                    margin: 15px 0;
+                    margin: 5px 0;
                 }
             }
         }

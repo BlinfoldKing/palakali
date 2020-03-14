@@ -18,7 +18,34 @@
 </head>
 
 <body>
+    <div>
+        <script>
+            const openImage = (image) => {
+                const modal = document.getElementById("image-modal")
+                modal.getElementsByTagName("img")[0].src = image;
+                modal.classList.add("is-active")
+            }
+
+            const closeImage = () => {
+                document.getElementById("image-modal").classList.remove("is-active")
+            }
+        </script>
+        <div class="modal" id="image-modal">
+            <div class="modal-background" onclick="closeImage()"></div>
+            <div class="modal-content">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+            </div>
+        </div>
+    </div>
     {{content}}
+    <script>
+        document.querySelectorAll(".image").forEach(elem => {
+            elem.addEventListener('click', () => {
+                const src = elem.getElementsByTagName("img")[0].src
+                openImage(src)
+            })
+        })
+    </script>
 </body>
 
 </html>
