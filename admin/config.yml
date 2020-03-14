@@ -55,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Quote", name: quote, widget: markdown}
           - {label: "Description", name: description, widget: markdown}
           - {label: "Visi", name: visi, widget: markdown}
-          - {label: "Misi", name: visi, widget: markdown}
+          - {label: "Misi", name: misi, widget: markdown}
           - label: "Founder List"
             name: founders
             widget: list
@@ -64,3 +64,21 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Image", name: image, widget: image}
               - {label: "Role", name: role, widget: string}
               - {label: "Description", name: description, widget: markdown}
+    - label: "Profile"
+      name: "profile"
+      file: "_data/profile.yml"
+      fields:
+          - {label: "Home Description", name: description, widget: markdown}
+          - label: "Program"
+            name: program
+            fields:
+              - label: Edukasi
+                name: edukasi
+                field:
+                  - {label: "Description", name: description, widget: markdown}
+                  - {label: "Short Description", name: shortDesc, widget: markdown}
+              - label: Kreasi
+                name: edukasi
+                field:
+                  - {label: "Description", name: description, widget: markdown}
+                  - {label: "Short Description", name: shortDesc, widget: markdown}

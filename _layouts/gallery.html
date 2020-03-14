@@ -3,6 +3,7 @@ layout: section
 ---
 
 <div id="gallery">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <h3 class="title is-4">Gallery</h3>
     <div class="image-section">
         <div>
@@ -15,6 +16,36 @@ layout: section
             </div>
             {% endfor %}
         </div>
+        <section class="mobile">
+            <i class="fas fa-caret-left" onclick="prevArea()"></i>
+            <div class="container">
+                <div id="carousel-area" class="carousel">
+                    {% for image in site.data.gallery.area %}
+                    <div class="item-{{forloop.index}} image">
+                        <img src="{{image.image}}" alt="">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <i class="fas fa-caret-right" onclick="nextArea()"></i>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+        <script>
+            const area = bulmaCarousel.attach('#carousel-area', {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                loop: true
+            })[0];
+
+            const nextArea = () => {
+                area.next()
+            }
+
+            const prevArea = () => {
+                area.previous()
+            }
+        </script>
     </div>
     <div class="image-section">
         <div>
@@ -27,6 +58,35 @@ layout: section
             </div>
             {% endfor %}
         </div>
+        <section class="mobile">
+            <i class="fas fa-caret-left" onclick="prevStudio()"></i>
+            <div class="container">
+                <div id="carousel-studio" class="carousel">
+                    {% for image in site.data.gallery.studio %}
+                    <div class="item-{{forloop.index}} image">
+                        <img src="{{image.image}}" alt="">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <i class="fas fa-caret-right" onclick="nextStudio()"></i>
+        </section>
+
+        <script>
+            const studio = bulmaCarousel.attach('#carousel-studio', {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                loop: true
+            })[0];
+
+            const nextStudio = () => {
+                studio.next()
+            }
+
+            const prevStudio = () => {
+                studio.previous()
+            }
+        </script>
     </div>
     <div class="image-section">
         <div>
@@ -39,7 +99,36 @@ layout: section
             </div>
             {% endfor %}
         </div>
-    </div>
+        <section class="mobile">
+            <i class="fas fa-caret-left" onclick="prevKelas()"></i>
+            <div class="container">
+                <div id="carousel-kelas" class="carousel">
+                    {% for image in site.data.gallery.kelas %}
+                    <div class="item-{{forloop.index}} image">
+                        <img src="{{image.image}}" alt="">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <i class="fas fa-caret-right" onclick="nextKelas()"></i>
+        </section>
 
+        <script>
+            const kelas = bulmaCarousel.attach('#carousel-kelas', {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                loop: true
+            })[0];
+
+            const nextKelas = () => {
+                studio.next()
+            }
+
+            const prevKelas = () => {
+                studio.previous()
+            }
+        </script>
+ 
+    </div>
 
 </div>

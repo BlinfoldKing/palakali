@@ -15,8 +15,34 @@ layout: default
     <div>
         <img src="/assets/palakalilogo.png" alt="">
     </div>
-    <div class="menu" onclick="showSidebar()">
+    <div class="menu" onclick="openSidebar()">
+        <i class="fas fa-bars" style="font-size: 18px;"></i>
     </div>
+    <div class="modal sidebar" id="sidebar">
+        <div class="modal-background" onclick="closeSidebar()"></div>
+        <div class="modal-content">
+            <ul>
+                <li><a href="/">About</a></li>
+                <li><a href="#program">Progams</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#area">Area</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const closeSidebar = () => {
+            document.getElementById('sidebar').classList.remove('is-active')
+        }
+
+       const openSidebar = () => {
+            document.getElementById('sidebar').classList.add('is-active')
+        }
+
+    </script>
+</div>
+<div class="mobile-header">
+    <img src="/assets/mobileheader.png" alt="">
 </div>
 <div class="about">
     <img src="/assets/palakaliabout.png" alt="">
@@ -33,13 +59,14 @@ layout: default
             menghasilkan sebuah karya rupa dan berkesenian. Karya-karya yang sudah dihasilkan, akan diapresiasikan
             dalam bentuk pameran atau kegiatan lain yang rutin diselenggarakan.
         </p>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 60px;">
             <a href="/profile" class="link-button">
                 Profil Saung Palakali
             </a>
         </div>
     </div>
 </div>
+
 <div class="program" id="program">
     <h2 class="title is-4">
         Programs
@@ -106,7 +133,7 @@ layout: default
                 <div class="modal-background"></div>
                 <div class="modal-content">
                     <i class="fas fa-times" onclick="closeModal('modal-kreatif')"></i>
-                    <img src="/assets/edu.png" alt="">
+                    <img src="/assets/kreatif.png" alt="">
                     <h3 class="title is-5">Kreatif</h3>
                     <p>
                         <ol>

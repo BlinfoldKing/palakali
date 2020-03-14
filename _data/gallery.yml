@@ -1,5 +1,9 @@
 area:
-  - title: Kopi
+  - title: kopi
+    image: /img/uploads/digmagallery6.png
+  - title: kopi 1
+    image: /img/uploads/digmagallery6.png
+  - title: kopi 2
     image: /img/uploads/digmagallery6.png
 studio:
   - title: Kopi

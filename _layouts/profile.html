@@ -9,10 +9,7 @@ layout: section
             <img src="/assets/quotepalakali.png" alt="">
         </div>
         <p>
-            SENI, mengundang anak-anak untuk menyentuh dan melakukan eksperimen, mengeksplorasi dan mentransformasi 
-            <br> SENI, memungkinkan anak-anak memvisualisasi, membuat hal-hal yang tak dapat diraba menjadi konkret
-            <br> SENI, adalah ruang imaji, ruang kebebasan berekspresi, dalam seni kita bisa belajar berani, menghargai, percaya diri, disiplin, empati, kerja sama dan kreatif
-            <br> SENI, bisa menumbuhkan individu yang lebih bertanggung jawab, lebih imajinatif, responsif dan terampil.
+            {{site.data.profile.quote | markdownify}}
         </p>
     </div>
     <div class="description">
@@ -20,11 +17,7 @@ layout: section
             <img src="/assets/pakaliprofile.png" alt="">
         </div>
         <p>
-            Kebutuhan akan alternatif-alternatif ruang kreatif yang mempunyai keunikan, sangatlah dibutuhkan, di tengah
-            kepungan tempat dan fasilitas yang serba instan. Diperlukan alternatif ruang tempat berkumpul, berdiskusi
-            dan melakukan kegiatan-kegiatan kreatif sehingga ada ruang merdeka berkarya bagi anak-anak sampai dewasa,
-            yang diharapkan akan membawa manfaat positif bagi individu maupun masyarakat yang lebih luas. Berawal dari
-            sinilah, PALAKALI CREATIVE (saung palakali creative ART community) hadir.
+            {{site.data.profile.description | markdownify}}
         </p>
     </div>
 
@@ -34,9 +27,9 @@ layout: section
         <div>
             <img src="/assets/Visi.png" alt="">
         </div>
-        <p>Sebuah ruang kreatif yang menekankan proses kreatif dalam berkarya seni dan desain, berbasis budaya dan
-            konsep ramah lingkungan. Menjadi bagian pelaku industri kreatif dunia, juga membentuk individu yang lebih
-            solutif, responsif, fleksibel, cerdas dan terampil di bidangnya masing-masing</p>
+        <p>
+            {{site.data.profile.visi | markdownify}}
+        </p>
     </div>
 
     <div class="misi">
@@ -45,18 +38,7 @@ layout: section
         </div>
 
         <p>
-            <ol>
-                <li> Memberikan pendidikan artistik dan membentuk pola berfikir kreatif pada setiap individu </li>
-                <li> Memproduksi
-                    barang seni dengan memanfaatkan limbah produksi/lingkungan</li>
-                <li> Menjadi ruang terbuka untuk berkesenian,
-                    bersifat open komunitas danan membuka kerjasama dengan komunitas lain</li>
-                <li> Memberikan edukasi tentang
-                    keberagaman media dan bahan dalam berkarya</li>
-                <li> Mendekatkan edukasi budaya dan ramah lingkungan dalam konsep
-                    berkarya seni (art, design, culture)
-                </li>
-            </ol>
+            {{site.data.profile.misi | markdownify}}
         </p>
     </div>
 
@@ -65,42 +47,24 @@ layout: section
             <img src="/assets/Tim.png" alt="">
         </div>
         <div class="peoples">
+            {% for people in site.data.profile.founders %}
             <div class="people-card">
                 <div class="image">
-
+                    <img src="{{people.image}}" alt="">
                 </div>
                 <div class="people-title">
-                    Founder
+                    {{people.role}}
                 </div>
                 <div class="people-name">
                     <strong>
-                        Lorem Ipsum
+                        {{people.name}}
                     </strong>
                 </div>
                 <div class="people-desc">
-                    Direktur Kreatif Alumnus Disain Komunikasi Visual ISI Yogyakarta S2 Seni Urban dan industri budaya
-                    Institut Kesenian Jakarta
+                    {{ people.description | markdownify}}
                 </div>
             </div>
-
-            <div class="people-card">
-                <div class="image">
-
-                </div>
-                <div class="people-title">
-                    Founder
-                </div>
-                <div class="people-name">
-                    <strong>
-                        Lorem Ipsum
-                    </strong>
-                </div>
-                <div class="people-desc">
-                    Direktur Kreatif Alumnus Disain Komunikasi Visual ISI Yogyakarta S2 Seni Urban dan industri budaya
-                    Institut Kesenian Jakarta
-                </div>
-            </div>
- 
+            {% endfor %}
         </div>
     </div>
 </div>
