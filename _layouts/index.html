@@ -45,18 +45,94 @@ layout: default
         Programs
     </h2>
     <div class="content">
+        <script>
+            const openModal = (str) => {
+                document.getElementById(str).classList.add("is-active");
+            }
+
+            const closeModal = (str) => {
+                document.getElementById(str).classList.remove("is-active");
+            }
+        </script>
+
         <div class="item">
-            <img src="/assets/edu.png" alt="">
-            <h3 class="title is-5">Edukasi</h3>
-            <p>
-                Membuka kelas seni reguler, kunjungan seni, pelatihan/workshop, kelas magang, kelas project,
-                pameran, diskusi seni, dll
-            </p>
+            <div onclick="openModal('modal-edukasi')">
+                <img src="/assets/edu.png" alt="">
+                <h3 class="title is-5">Edukasi</h3>
+                <p>
+                    Membuka kelas seni reguler, kunjungan seni, pelatihan/workshop, kelas magang, kelas project,
+                    pameran, diskusi seni, dll
+                </p>
+            </div>
+            <div class="modal" id="modal-edukasi">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <i class="fas fa-times" onclick="closeModal('modal-edukasi')"></i>
+                    <img src="/assets/edu.png" alt="">
+                    <h3 class="title is-5">Edukasi</h3>
+                    <p>
+                        <ol>
+                            <li>
+                                Membuka kelas seni reguler, kunjungan seni, pelatihan/workshop, kelas magang, kelas
+                                project
+                            </li>
+                            <li>
+                                Konsep pendidikan berkesenian di Saung Palakali adalah melibatkan para peserta didik
+                                dalam keseluruhan proses berkesenian
+                            </li>
+                            <li>
+                                Kelas dibuka mulai usia 4 tahun - dewasa </li>
+                            <li>
+                                Capaian bukan pada hasil/produk jadi, tapi lebih pada proses berfikir kreatif untuk
+                                mencapai hasil, bagaimana mereka menemukan ide, mengembangkan idenya, kemudian membuat
+                                mereka berani mengekspresikan ide, dan berani bereksplorasi (mencoba-coba) dengan
+                                berbagai bahan ataupun media yang mereka temui
+                            </li>
+                            <li>Karya-karya yang sudah mereka hasilkan, nantinya akan diapresiasikan dalam bentuk
+                                pameran atau kegiatan lain yang rutin diselenggarakan. Keberagaman media berkarya juga
+                                menjadi dasar dalam proses berkarya cipta</li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="item">
-            <img src="/assets/kreatif.png" alt="">
-            <h3 class="title is-5">Produk Kreatif</h3>
-            <p>Memproduksi produk kreatif memanfaatkan bahan limbah</p>
+            <div onclick="openModal('modal-kreatif')">
+                <img src="/assets/kreatif.png" alt="">
+                <h3 class="title is-5">Produk Kreatif</h3>
+                <p>Memproduksi produk kreatif memanfaatkan bahan limbah</p>
+            </div>
+            <div class="modal" id="modal-kreatif">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <i class="fas fa-times" onclick="closeModal('modal-kreatif')"></i>
+                    <img src="/assets/edu.png" alt="">
+                    <h3 class="title is-5">Kreatif</h3>
+                    <p>
+                        <ol>
+                            <li>
+                                Palakali memproduksi produk kreatif berbahan limbah berbahan dasar limbah produksi
+                                interior (industri) dan limbah rumah tangga
+                            </li>
+                            <li>
+                                Produk bisa berupa produk pakai (untuk kebutuhan interior, eksterior), ataupun produk
+                                instalasi
+                            </li>
+                            <li>
+                                Keunikan dan kreastivitas disain sangat diutamakan dalam proses menghasilkan barang seni
+                            </li>
+                            <li>
+                                Gaya utama yang disusung adalah dekoratif naif dan vintage
+                            </li>
+                            <li>
+                                Produksi barang seni ini bisa bersifat custom atau produksi berdasarkan ketersediaan
+                                bahan limbah. Limbah yang dimanfaatkan mulai dari kayu, hpl, kaca, multiplek, sampai
+                                limbah kertas dan botol
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="item">
             <img src="/assets/help.png" alt="">
@@ -65,7 +141,6 @@ layout: default
         </div>
     </div>
 </div>
-<div class="border"></div>
 <div class="timeline" id="event">
     <h4 class="title is-5">
         Upcoming Events
@@ -73,7 +148,7 @@ layout: default
     <div class="line"></div>
     <div class="content">
         <div class="item">
-            <div class="point not-last"></div>
+            <div class="point first"></div>
             {% assign len1 = site.data.event.events.length | minus: 1 %}
             {% assign len2 = site.data.event.events.length | minus: 2 %}
             {% assign len3 = site.data.event.events.length | minus: 3 %}
@@ -83,7 +158,7 @@ layout: default
                     {{ site.data.event.events[len1].periode}}
                 </p>
             </div>
-       </div>
+        </div>
         <div class="item">
             <div class="point not-last"></div>
             <div>
@@ -92,7 +167,7 @@ layout: default
                     {{ site.data.event.events[len2].periode}}
                 </p>
             </div>
-       </div>
+        </div>
         <div class="item">
             <div class="point"></div>
             <div>
@@ -101,7 +176,7 @@ layout: default
                     {{ site.data.event.events[len3].periode}}
                 </p>
             </div>
-       </div>
+        </div>
     </div>
     <a href="/event" class="link-button">Lihat Kegiatan</a>
     <!-- <button class="button-transparent">more</button> -->
