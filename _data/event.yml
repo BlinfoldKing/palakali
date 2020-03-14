@@ -1,0 +1,41 @@
+events:
+  - title: Lorem Ipsum
+    location: 'Bandung, Jawa Barat'
+    description: >-
+      Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem Ipsum
+    periode: 14 Juni
+    image: /img/uploads/digmagallery6.png
+  - title: Lorem Ipsum
+    location: Lorem Ipsum
+    description: >-
+      Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem Ipsum
+    periode: 14 Juni
+    image: /img/uploads/digmagallery6.png
+  - title: Lorem Ipsum
+    description: >-
+      Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem
+      IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum
+    location: 'Bandung, Jawa Barat'
+    periode: 14 Juni
+    image: /img/uploads/digmagallery6.png
