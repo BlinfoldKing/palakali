@@ -12,7 +12,14 @@ collections: # A list of collections the CMS should be able to edit
       name: "home"
       file: "_data/home.yml"
       fields:
-        - {label: "Title", name: title, widget: string}
+        - {label: "Description", name: description, widget: markdown}
+        - {label: "Edukasi", name: edukasi, widget: markdown}
+        - {label: "Kreatif", name: kreatif, widget: markdown}
+        - {label: "Kolaborasi", name: kolaborasi, widget: markdown}
+        - {label: "email", name: email, widget: string}
+        - {label: "phone", name: phone, widget: string}
+        - {label: "facebook", name: facebook, widget: markdown}
+        - {label: "instagram", name: instagram, widget: string}
     - label: "Gallery"
       name: "gallery"
       file: "_data/gallery.yml"
@@ -64,21 +71,3 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Image", name: image, widget: image}
               - {label: "Role", name: role, widget: string}
               - {label: "Description", name: description, widget: markdown}
-    - label: "Profile"
-      name: "profile"
-      file: "_data/profile.yml"
-      fields:
-          - {label: "Home Description", name: description, widget: markdown}
-          - label: "Program"
-            name: program
-            fields:
-              - label: Edukasi
-                name: edukasi
-                field:
-                  - {label: "Description", name: description, widget: markdown}
-                  - {label: "Short Description", name: shortDesc, widget: markdown}
-              - label: Kreasi
-                name: edukasi
-                field:
-                  - {label: "Description", name: description, widget: markdown}
-                  - {label: "Short Description", name: shortDesc, widget: markdown}
